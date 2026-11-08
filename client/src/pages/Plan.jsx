@@ -5,6 +5,7 @@ import Progress from "../components/Progress";
 import Workflow from "../components/Workflow";
 import ResultCard from "../components/ResultCard";
 import ReviewPanel from "../components/ReviewPanel";
+import ServerStatus from "../components/ServerStatus";
 
 export default function Plan() {
   const { result, plan, done, revisions, loading, error, setError, start, review } = usePlanner();
@@ -21,6 +22,7 @@ export default function Plan() {
       </section>
 
       <div className="container plan-layout">
+        <ServerStatus />
         <PlannerForm loading={loading} onSubmit={start} />
         {plan && <Workflow plan={plan} blocked={result?.status === "blocked"} />}
         {loading && !isReview && <Progress plan={plan} done={done} isReview={false} />}

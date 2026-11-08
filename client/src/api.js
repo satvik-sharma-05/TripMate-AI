@@ -33,3 +33,6 @@ async function stream(path, body, onEvent) {
 export const startPlan = (message, onEvent) => stream("/api/plan", { message }, onEvent);
 export const reviewPlan = (threadId, approved, feedback, onEvent) =>
   stream(`/api/plan/${threadId}/review`, { approved, feedback }, onEvent);
+
+// Quick "are you awake?" check. Free hosting sleeps when idle, so this can take ~50s.
+export const ping = () => fetch(BASE + "/health");
