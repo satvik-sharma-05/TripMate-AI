@@ -1,0 +1,18 @@
+# Web API
+fastapi==0.162.2
+uvicorn[standard]==0.54.0
+python-dotenv==1.2.4
+
+# AI / agents
+langgraph==1.2.20
+langchain==1.4.9
+langchain-groq==1.1.3
+langchain-mcp-adapters==0.3.2
+mcp==1.30.0   # langchain-mcp-adapters does not support mcp 2.x yet
+
+# Memory (saves paused conversations in PostgreSQL)
+langgraph-checkpoint-postgres==3.2.0
+psycopg[binary,pool]==3.3.8
+
+# Used by the weather MCP server
+httpx==0.28.1

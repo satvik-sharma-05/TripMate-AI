@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+node_modules/
+dist/
+
+# reference copy of the original project (not ours)
+repo/
+
+# editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
