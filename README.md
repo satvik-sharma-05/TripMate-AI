@@ -1,5 +1,8 @@
 # TripMate AI — Multi-Agent Travel Planner
 
+**🌐 Live demo: [tripmate-ai-2hmx.onrender.com](https://tripmate-ai-2hmx.onrender.com/)**
+*(Free hosting: the first load after it has been idle can take up to a minute while the server wakes up.)*
+
 A team of AI agents plans a trip: a **supervisor** checks the request is about travel
 (**guardrail**) and picks which **specialists** to run. Then an itinerary agent writes a
 draft that a **human approves or revises** before the final plan is produced.
